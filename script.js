@@ -1,10 +1,10 @@
 function fusePokemon() {
-    const pokemon1 = document.getElementById('pokemon1').value;
-    const pokemon2 = document.getElementById('pokemon2').value;
+    const pokemon1 = document.getElementById("pokemon1").value;
+    const pokemon2 = document.getElementById("pokemon2").value;
 
     if (pokemon1 && pokemon2) {
         const fusionName = createFusionName(pokemon1, pokemon2);
-        document.getElementById('result').innerText = 'Fused Pokémon Name: ${fusionName}';
+        document.getElementById('result').innerText = fusionName;
     } else {
         document.getElementById('result').innerText = 'Please enter both Pokémon names.';
     }
